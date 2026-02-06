@@ -2,13 +2,14 @@
 <html lang="pt-br">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>bmms</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#0b0b0f" />
+  <title>Enigma</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <main class="wrap">
-    <img id="puzzle" class="puzzle" alt="bmms" />
+    <img id="puzzle" class="puzzle" alt="Enigma" />
 
     <form id="form" class="form" autocomplete="off">
       <input
@@ -17,8 +18,15 @@
         type="text"
         placeholder="Resposta…"
         aria-label="Resposta"
+        inputmode="text"
+        enterkeyhint="done"
+        autocapitalize="none"
+        autocorrect="off"
+        spellcheck="false"
         required
       />
+      <!-- botão invisível só pra garantir submit no iOS -->
+      <button class="hiddenSubmit" type="submit" aria-hidden="true" tabindex="-1">OK</button>
     </form>
 
     <p id="msg" class="msg" aria-live="polite"></p>
