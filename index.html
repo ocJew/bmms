@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>bmms</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <img id="puzzle" class="puzzle" alt="bmms" />
+
+    <form id="form" class="form" autocomplete="off">
+      <input
+        id="answer"
+        class="input"
+        type="text"
+        placeholder="Resposta…"
+        aria-label="Resposta"
+        required
+      />
+    </form>
+
+    <p id="msg" class="msg" aria-live="polite"></p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
